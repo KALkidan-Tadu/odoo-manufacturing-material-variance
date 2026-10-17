@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_mrp_material_variance_root"
+              name="Material Variance"
+              parent="mrp.menu_mrp_reporting"
+              sequence="50"
+              groups="mrp.group_mrp_user"/>
+
+    <menuitem id="menu_mrp_material_variance"
+              name="Material Variances"
+              parent="menu_mrp_material_variance_root"
+              action="action_mrp_material_variance_menu"
+              sequence="10"
+              groups="mrp.group_mrp_user"/>
+
+    <menuitem id="menu_mrp_material_variance_dashboard"
+              name="Variance Summary"
+              parent="menu_mrp_material_variance_root"
+              action="action_mrp_material_variance_dashboard"
+              sequence="20"
+              groups="mrp.group_mrp_user"/>
+</odoo>

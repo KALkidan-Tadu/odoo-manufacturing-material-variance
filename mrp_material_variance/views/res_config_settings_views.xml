@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_material_variance" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.mrp.material.variance</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="mrp.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='mrp']" position="inside">
+                <block title="Material Variance" name="material_variance_setting_container">
+                    <setting id="material_variance_tolerance_setting"
+                             string="Material Consumption Tolerance"
+                             company_dependent="1"
+                             help="Acceptable absolute variance percentage between planned and actual component consumption. Used to classify over- and under-consumption.">
+                        <div class="content-group">
+                            <div class="mt16">
+                                <field name="material_variance_tolerance" class="oe_inline"/>
+                                <span class="oe_inline">%</span>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_material_variance_user,mrp.material.variance user,model_mrp_material_variance,mrp.group_mrp_user,1,0,0,0
+access_mrp_material_variance_manager,mrp.material.variance manager,model_mrp_material_variance,mrp.group_mrp_manager,1,1,1,1
+access_mrp_material_variance_dashboard_user,mrp.material.variance.dashboard user,model_mrp_material_variance_dashboard,mrp.group_mrp_user,1,1,1,1
